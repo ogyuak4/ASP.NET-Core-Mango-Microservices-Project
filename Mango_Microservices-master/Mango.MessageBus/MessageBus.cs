@@ -11,7 +11,7 @@ namespace Mango.MessageBus
     public class MessageBus : IMessageBus
     {
             
-        private string connectionString = "Endpoint=sb://mangoweb.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;" // SharedAccessKey=";
+        private string connectionString = // "Endpoint=sb://mangoweb.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;" SharedAccessKey=";
 
         public async Task PublishMessage(object message, string topic_queue_Name)
         {
